@@ -1,5 +1,6 @@
 return {
   "NvChad/nvcommunity",
+  {import = "nvcommunity.git.diffview" },
   { import = "nvcommunity.editor.rainbowdelimiters" },
   { import = "nvcommunity.editor.illuminate" },
   { import = "nvcommunity.folds.ufo" },
@@ -11,6 +12,5 @@ return {
   { import = "nvcommunity.editor.hlargs" },
   { import = "nvcommunity.diagnostics.trouble" },
   { import = "nvcommunity.lsp.dim" },
-  { import = "nvcommunity.motion.harpoon" },
 }
 
