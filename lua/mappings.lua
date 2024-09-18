@@ -16,6 +16,7 @@ map(
   "<cmd>lua require('trouble').toggle('workspace_diagnostics')<CR>",
   { desc = "toggle workspace diagnostics" }
 )
+map("n", "<c-s>", "<CMD>w<CR>", { desc = "Save the current buffer" })
 map(
   "n",
   "<leader>xd",
