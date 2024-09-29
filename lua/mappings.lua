@@ -25,7 +25,7 @@ map(
 )
 map("n", "<leader>xq", "<cmd>lua require('trouble').toggle('quickfix')<CR>", { desc = "toggle quickfix" })
 map("n", "<leader>xl", "<cmd>lua require('trouble').toggle('loclist')<CR>", { desc = "toggle location list" })
-map("n", "gR", "<cmd>lua require('trouble').toggle('lsp_references')<CR>", { desc = "toggle LSP references" })
+-- map("n", "gR", "<cmd>lua require('trouble').toggle('lsp_references')<CR>", { desc = "toggle LSP references" })
 
 -- map("n", ";", ":", { desc = "CMD enter command mode" })
 -- map("i", "jk", "<ESC>")
