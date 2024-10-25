@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
+    htmldjanog = {"djlint"},
     javascript = {"prettier"},
     python = { "isort", "black" },
     go = {"gofumpt", "goimports_reviser", "golines"},

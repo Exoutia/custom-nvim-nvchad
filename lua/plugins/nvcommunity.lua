@@ -12,5 +12,6 @@ return {
   { import = "nvcommunity.editor.hlargs" },
   { import = "nvcommunity.diagnostics.trouble" },
   { import = "nvcommunity.lsp.dim" },
+  { import = "nvcommunity.folds.tailwindfold" },
 }
 
