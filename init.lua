@@ -31,7 +31,7 @@ require("lazy").setup({
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
-
+vim.o.relativenumber = true
 require "nvchad.autocmds"
 
 vim.schedule(function()
