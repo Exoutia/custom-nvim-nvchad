@@ -28,6 +28,7 @@ return {
       "pyright",
       "black",
       "ruff-lsp",
+      "djlint",
       "isort",
       "debugpy",
 
