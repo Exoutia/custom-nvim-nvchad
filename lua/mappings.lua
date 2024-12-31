@@ -33,4 +33,3 @@ map("n", "<leader>xl", "<cmd>lua require('trouble').toggle('loclist')<CR>", { de
 --
 -- obsidian shortcuts
 map("n", "<leader>on", "<CMD>ObsidianNew<CR>", { desc = "Create new file in obsidian notes" })
-map("n", "<leader>od", "<CMD>ObsidianToday<CR>", { desc = "Create new file in obsidian notes" })
