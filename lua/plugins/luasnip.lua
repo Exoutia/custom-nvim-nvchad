@@ -18,16 +18,23 @@ return {
     local s = ls.snippet
     local t = ls.text_node
     local i = ls.insert_node
+    local extras = require "luasnip.extras"
+    local rep = extras.rep
     local f = ls.function_node
 
-    local myFunc = function()
-      return "HELLO"
-    end
+    -- stylua: ignore start
 
-    ls.add_snippets("lua", {
-      s("example", {
-        f(myFunc),
-      }),
+    -- typescriptreact
+    ls.add_snippets("typescriptreact", {
+      s("cfed", {
+        t("const "), i(1), t(" = () => {"),
+        t({"", "\t\treturn ("}),
+        t({"", "\t\t\t"}), i(2),
+        t({"", "\t\t)"}),
+        t({ "", "}"}),
+        t({""}),
+        t({"", "export default " }), rep(1), t(';')
+      }, "this creates a simple export default function")
     })
   end,
 }
