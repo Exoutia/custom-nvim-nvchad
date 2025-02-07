@@ -18,6 +18,7 @@ local servers = {
   "gopls",
   "elixirls",
   "jdtls",
+  "denols",
 }
 
 -- lsps with default config
@@ -28,6 +29,17 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.denols.setup {
+  on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+}
+
+lspconfig.ts_ls.setup {
+  on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern("package.json"),
+  single_file_support = false
+}
 
 lspconfig.clangd.setup {
   on_attach = on_attach,
